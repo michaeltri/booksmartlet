@@ -5,7 +5,7 @@ function booksmartlet()
 
     if (c)
     {
-        var u = 'http://github.com/michaeltri/booksmartlet/raw/master/' + c;
+        var u = 'http://github.com/michaeltri/booksmartlet/raw/master/' + c + '.js';
         
         q = document.getElementById('booksmartlet');
         if (q) 
