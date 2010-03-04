@@ -1,1 +1,2 @@
-function booksmartlet_exec(s){setTimeout(function(){location.href="http://www.google.com/search?q="+s;},0)}booksmartlet_exec(bsl_s);
+function execBooksmartlet(param1, param2){setTimeout(function(){location.href="http://www.google.com/search?q="+param1;},0)}
+execBooksmartlet(gBooksmartletParam1, gBooksmartletParam2);
