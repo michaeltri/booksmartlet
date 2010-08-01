@@ -7,7 +7,7 @@ function execBooksmartlet()
         {
             if(!b)throw(0);
             d.title='(Saving...)%20'+d.title;
-            z.setAttribute('src',l.protocol+'//www.instapaper.com/j/vIeRKDI16cqo?u='+encodeURIComponent(l.href)+'&t='+ (new%20Date().getTime()));
+            z.setAttribute('src',l.protocol+'//www.instapaper.com/j/vIeRKDI16cqo?u='+encodeURIComponent(l.href)+'&t='+ (new Date().getTime()));
             b.appendChild(z);
         }
         catch(e)
