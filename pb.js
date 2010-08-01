@@ -1,15 +1,13 @@
 function execBooksmartlet()
 {
-    q=location.href;
     if(document.getSelection)
     {
-        d=document.getSelection();
+        s=document.getSelection();
     }
     else
     {
-        d='';
+        s='';
     };
-    p=document.title;
-    void(open('http://pinboard.in/add?url='+encodeURIComponent(q)+'&description='+encodeURIComponent(d)+'&title='+encodeURIComponent(p),'Pinboard','toolbar=no,width=700,height=350'));    
+    document.location='http://pinboard.in/add?next=same&url='+encodeURIComponent(location.href)+'&description='+encodeURIComponent(s)+'&title='+encodeURIComponent(document.title)
 }
 execBooksmartlet();
