@@ -1,18 +1,15 @@
-function execBooksmartlet(param1, param2)
+function execBooksmartlet()
 {
-    setTimeout(
-        function()
-        {
-            if(document.getSelection)
-            {
-                s=document.getSelection();
-            }
-            else
-            {
-                s='';
-            };
-            document.location='http://pinboard.in/add?next=same&url='+encodeURIComponent(location.href)+'&description='+encodeURIComponent(s)+'&title='+encodeURIComponent(document.title)
-        },
-        0)
+    q=location.href;
+    if(document.getSelection)
+    {
+        d=document.getSelection();
+    }
+    else
+    {
+        d='';
+    };
+    p=document.title;
+    void(open('http://pinboard.in/add?url='+encodeURIComponent(q)+'&description='+encodeURIComponent(d)+'&title='+encodeURIComponent(p),'Pinboard',%20'toolbar=no,width=700,height=350'));    
 }
-execBooksmartlet(gBooksmartletParam1, gBooksmartletParam2);
+execBooksmartlet();
