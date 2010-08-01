@@ -1,31 +1,22 @@
-javascript:
-var gBooksmartletParam1 = '';
-var gBooksmartletParam2 = '';
-
-Booksmartlet();
-function Booksmartlet()
+javascript:booksmartlet();
+function booksmartlet()
 {
-    var url = 'http://github.com/michaeltri/booksmartlet/raw/master/';
-    var input = window.prompt('Booksmartlet:');
+    var u = 'http://github.com/michaeltri/booksmartlet/raw/master/';
+    var c = window.prompt('Booksmartlet:');
     
-    if (input)
+    if (c)
     {
-        var params = input.split(" ");
-        cmd = params[0];
-        gBooksmartletParam1 = params[1];
-        gBooksmartletParam2 = params[2];
-        
         q = document.getElementById('booksmartlet');
         if (q) 
         {
             q.parentNode.removeChild(q);
         }
         
-        sc = document.createElement('script');
-        sc.src = url + cmd + '.js';
-        sc.id = 'booksmartlet';
-        sc.type = 'text/javascript';
-        heads = document.getElementsByTagName('head');
-        void(heads[0].appendChild(sc));
+        s = document.createElement('script');
+        s.src = u + c + '.js';
+        s.id = 'booksmartlet';
+        s.type = 'text/javascript';
+        h = document.getElementsByTagName('head');
+        void(h[0].appendChild(s));
     }
 }

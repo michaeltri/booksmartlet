@@ -1,10 +1,5 @@
-function execBooksmartlet(param1, param2)
+function execBooksmartlet()
 {
-    setTimeout(
-        function()
-        {
-            location.href="http://www.google.com/search?q="+param1;
-        },
-        0)
+    location.href='http://www.google.com/';
 }
-execBooksmartlet(gBooksmartletParam1, gBooksmartletParam2);
+execBooksmartlet();
