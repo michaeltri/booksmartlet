@@ -1,6 +1,6 @@
 function execBooksmartlet()
 {
-  function _whatFont() {
+  (function _whatFont() {
   	var $, css, fd, tip, panel, toolbar, ctrl, fs, VER, _wf;
 
   	VER = "1.6.1";
@@ -718,6 +718,6 @@ function execBooksmartlet()
   	};
 
   	return _wf;
-  }
+  })();
 }
 execBooksmartlet();
